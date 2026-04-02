@@ -1,0 +1,41 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="105" y1="77" x2="1042" y2="1086" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D7DA"/>
+      <stop offset="0.52" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#CADDF8"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(198 164) rotate(48.1462) scale(405.502)">
+      <stop stop-color="#FFD8D8" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FFD8D8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 214) rotate(125.253) scale(417.291)">
+      <stop stop-color="#CFE2FB" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#CFE2FB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="56" fill="url(#bg)"/>
+  <rect width="1200" height="1200" rx="56" fill="url(#glowA)"/>
+  <rect width="1200" height="1200" rx="56" fill="url(#glowB)"/>
+  <text x="600" y="150" fill="#5E5471" font-family="Georgia, serif" font-size="74" text-anchor="middle">Terapia psicológica online</text>
+  <text x="600" y="255" fill="#5E5471" font-family="'Trebuchet MS', sans-serif" font-size="50" text-anchor="middle">Psc Cl. Karen Quezada</text>
+  <text x="600" y="322" fill="#5E5471" font-family="'Trebuchet MS', sans-serif" font-size="48" text-anchor="middle">Mgt. Neuropsicología y Educación</text>
+  <circle cx="600" cy="655" r="235" fill="#CEB697"/>
+  <ellipse cx="600" cy="746" rx="148" ry="38" fill="#EFE7DF"/>
+  <rect x="540" y="492" width="120" height="198" rx="58" fill="#D9F0EF"/>
+  <rect x="558" y="690" width="84" height="138" rx="34" fill="#16131B"/>
+  <circle cx="600" cy="468" r="56" fill="#F2D5C5"/>
+  <path d="M546 456C546 422.863 572.863 396 606 396H608C641.137 396 668 422.863 668 456V470H546V456Z" fill="#211A27"/>
+  <text x="600" y="575" fill="#FFFFFF" fill-opacity="0.82" font-family="'Trebuchet MS', sans-serif" font-size="26" text-anchor="middle">Aquí irá tu foto original</text>
+  <g transform="translate(298 932)">
+    <circle cx="42" cy="42" r="42" fill="#F2A9C2"/>
+    <text x="42" y="40" fill="white" font-family="'Trebuchet MS', sans-serif" font-size="20" font-weight="700" text-anchor="middle">contác</text>
+    <text x="42" y="63" fill="white" font-family="'Trebuchet MS', sans-serif" font-size="20" font-weight="700" text-anchor="middle">tame</text>
+  </g>
+  <text x="450" y="982" fill="#5E5471" font-family="'Trebuchet MS', sans-serif" font-size="34">+593 0987916863</text>
+  <g transform="translate(300 1038)">
+    <circle cx="32" cy="32" r="32" fill="#2164C8"/>
+    <text x="32" y="42" fill="white" font-family="Arial, sans-serif" font-size="44" font-weight="700" text-anchor="middle">f</text>
+  </g>
+  <text x="474" y="1084" fill="#5E5471" font-family="'Trebuchet MS', sans-serif" font-size="34">Psicóloga Karen Quezada</text>
+</svg>

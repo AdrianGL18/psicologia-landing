@@ -1,0 +1,36 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="38" fill="#B9B9B9"/>
+  <path d="M102 164C134 105 188 90 235 90C320 90 382 152 400 224C420 302 464 354 534 385C470 399 436 438 410 492C382 550 308 598 224 570C150 545 90 474 84 392C80 320 82 200 102 164Z" fill="#6571CD"/>
+  <path d="M115 215C172 202 230 246 265 306C296 360 340 390 408 404" stroke="#A6D8FF" stroke-width="14" stroke-linecap="round"/>
+  <text x="70" y="502" fill="#894DAE" font-family="'Trebuchet MS', sans-serif" font-size="58" font-weight="700">Karen Quezada</text>
+  <text x="70" y="570" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="52" font-weight="700">Psicóloga clínica</text>
+  <text x="70" y="630" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="48" font-weight="700">Máster en</text>
+  <text x="70" y="690" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="48" font-weight="700">Neuropsicología y</text>
+  <text x="70" y="750" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="48" font-weight="700">Educación</text>
+  <text x="68" y="842" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="58" font-weight="700">¿Necesitas ayuda?</text>
+  <rect x="62" y="856" width="300" height="92" rx="36" fill="#8D4FC4"/>
+  <text x="212" y="914" fill="white" font-family="'Trebuchet MS', sans-serif" font-size="42" font-weight="700" text-anchor="middle">Llámenos</text>
+  <rect x="480" y="76" width="646" height="700" rx="18" fill="#F4EEF9" stroke="#8D4FC4" stroke-width="10"/>
+  <text x="803" y="180" fill="#7A4AAA" font-family="'Trebuchet MS', sans-serif" font-size="74" font-weight="800" text-anchor="middle">¿Cómo cuidar la</text>
+  <text x="803" y="262" fill="#7A4AAA" font-family="'Trebuchet MS', sans-serif" font-size="74" font-weight="800" text-anchor="middle">salud mental?</text>
+  <circle cx="810" cy="470" r="92" fill="#A774D9"/>
+  <path d="M772 426C738 444 720 482 720 520C756 520 780 540 810 566C839 540 864 520 900 520C900 482 882 444 848 426C828 438 820 446 810 463C801 447 792 439 772 426Z" fill="#7F4FB2"/>
+  <g fill="#5E3A8A" font-family="'Trebuchet MS', sans-serif" font-size="28" font-weight="700">
+    <text x="560" y="338">Mantener relaciones saludables.</text>
+    <text x="884" y="338">Organizar rutinas y actividades.</text>
+    <text x="540" y="430">Evitar el aislamiento.</text>
+    <text x="942" y="440">Hablar de nuestras emociones.</text>
+    <text x="528" y="630">Regular horarios de sueño.</text>
+    <text x="920" y="642">Tener tiempo de relajación.</text>
+    <text x="736" y="720">Hacer ejercicio.</text>
+  </g>
+  <g fill="#C4A3E8">
+    <circle cx="560" cy="314" r="24"/>
+    <circle cx="956" cy="314" r="24"/>
+    <circle cx="532" cy="406" r="24"/>
+    <circle cx="1038" cy="406" r="24"/>
+    <circle cx="520" cy="604" r="24"/>
+    <rect x="1010" y="588" width="48" height="48" rx="12"/>
+    <circle cx="708" cy="694" r="24"/>
+  </g>
+</svg>

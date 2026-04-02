@@ -1,0 +1,23 @@
+<svg width="1400" height="990" viewBox="0 0 1400 990" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="990" rx="44" fill="#E6C993"/>
+  <rect x="60" y="60" width="640" height="860" rx="54" fill="#F4E8D4"/>
+  <rect x="60" y="520" width="640" height="360" rx="36" fill="#000000" fill-opacity="0.16"/>
+  <circle cx="1110" cy="560" r="260" fill="#F1E7DF"/>
+  <rect x="1020" y="404" width="180" height="284" rx="90" fill="#FFF8F2"/>
+  <rect x="1048" y="680" width="124" height="182" rx="42" fill="#1B1823"/>
+  <circle cx="1110" cy="364" r="78" fill="#F0D1C4"/>
+  <path d="M1030 354C1030 310.922 1064.92 276 1108 276H1112C1155.08 276 1190 310.922 1190 354V372H1030V354Z" fill="#271F2C"/>
+  <path d="M150 200C176 138 233 112 280 112C354 112 424 155 460 224C500 300 547 349 612 374C560 384 522 418 486 462C434 524 327 530 248 488C180 452 116 382 114 290C112 248 122 220 150 200Z" fill="#5D73C8"/>
+  <path d="M160 237C210 223 255 258 287 302C320 347 366 379 430 392" stroke="#A6D8FF" stroke-width="14" stroke-linecap="round"/>
+  <text x="390" y="250" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="52" font-weight="700">Karen Quezada</text>
+  <text x="390" y="316" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="46" font-weight="700">Psicóloga clínica</text>
+  <text x="390" y="376" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="44" font-weight="700">Máster en Neuropsicología y</text>
+  <text x="390" y="430" fill="#5A8FD6" font-family="'Trebuchet MS', sans-serif" font-size="44" font-weight="700">Educación</text>
+  <text x="118" y="592" fill="#244D8D" font-family="'Trebuchet MS', sans-serif" font-size="60" font-weight="700">¿Cómo cuidar la salud mental?</text>
+  <text x="118" y="670" fill="#1F1B1A" font-family="'Trebuchet MS', sans-serif" font-size="34" font-weight="700">Hoy existe cierto tabú en torno a la consulta</text>
+  <text x="118" y="714" fill="#1F1B1A" font-family="'Trebuchet MS', sans-serif" font-size="34" font-weight="700">con el psicólogo, pero pedir ayuda también</text>
+  <text x="118" y="758" fill="#1F1B1A" font-family="'Trebuchet MS', sans-serif" font-size="34" font-weight="700">es una forma de cuidado y bienestar.</text>
+  <text x="118" y="820" fill="#1F1B1A" font-family="'Trebuchet MS', sans-serif" font-size="30">Versión base inspirada en tu pieza original.</text>
+  <rect x="1002" y="812" width="282" height="96" rx="32" fill="#4E81D7"/>
+  <text x="1143" y="872" fill="white" font-family="'Trebuchet MS', sans-serif" font-size="34" font-weight="700" text-anchor="middle">¿Necesitas ayuda?</text>
+</svg>
