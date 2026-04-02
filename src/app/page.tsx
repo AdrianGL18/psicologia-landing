@@ -170,13 +170,13 @@ export default function Home() {
     <main id="top" className="bg-[#f2eef9] text-[var(--color-ink)]">
       <section className="relative overflow-hidden bg-[#302149] text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.08),transparent_42%)]" />
-        <div className="relative mx-auto max-w-7xl px-5 pt-5 pb-10 sm:px-8 lg:px-12 lg:pt-8 lg:pb-12">
-          <header className="relative min-h-[6rem]">
+        <div className="relative mx-auto max-w-7xl px-5 pt-4 pb-7 sm:px-8 lg:px-12 lg:pt-5 lg:pb-8">
+          <header className="relative min-h-[5.3rem]">
             <a
               href="#top"
-              className="absolute left-0 top-0 hidden h-18 w-18 items-center justify-center rounded-full bg-white shadow-[0_18px_50px_rgba(14,12,27,0.18)] lg:flex"
+              className="absolute left-0 top-0 hidden h-16 w-16 items-center justify-center rounded-full bg-white shadow-[0_18px_50px_rgba(14,12,27,0.18)] lg:flex"
             >
-              <div className="h-14 w-14 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
+              <div className="h-12 w-12 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
                 <Image
                   src={logoKarenQuezada}
                   alt="Logo de Karen Quezada"
@@ -184,7 +184,7 @@ export default function Home() {
                 />
               </div>
             </a>
-            <nav className="mx-auto flex w-full max-w-[39rem] items-center justify-between rounded-[2rem] bg-white/96 p-4 text-[#0f2a67] shadow-[0_18px_50px_rgba(14,12,27,0.18)] backdrop-blur md:rounded-full md:px-3 md:py-3">
+            <nav className="mx-auto flex w-full max-w-[37rem] items-center justify-between rounded-[2rem] bg-white/96 px-4 py-3 text-[#0f2a67] shadow-[0_18px_50px_rgba(14,12,27,0.18)] backdrop-blur md:rounded-full md:px-3.5 md:py-2.5">
               <div className="flex items-center gap-3 pl-1 md:hidden">
                 <div className="h-12 w-12 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
                   <Image
@@ -194,12 +194,12 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="hidden flex-wrap items-center gap-2 text-sm font-semibold text-[#1b2f67] md:flex">
+              <div className="hidden flex-wrap items-center gap-1.5 text-[0.95rem] font-semibold text-[#1b2f67] md:flex">
                 <NavDropdown items={contentMenu} label="Contenidos" />
                 <NavDropdown items={testsMenu} label="Tests" minWidthClassName="min-w-72" />
                 <a
                   href="#otros-servicios"
-                  className="rounded-full px-5 py-3 text-[#ff7d9a] transition hover:bg-[#fff1f5]"
+                  className="rounded-full px-4 py-2.5 text-[#ff7d9a] transition hover:bg-[#fff1f5]"
                 >
                   Otros servicios
                 </a>
@@ -209,7 +209,7 @@ export default function Home() {
                   href={whatsappHref}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-[var(--color-lime)] px-8 py-4 text-center text-base font-semibold text-[#182247] transition hover:bg-[#dced63]"
+                  className="rounded-full bg-[var(--color-lime)] px-7 py-3 text-center text-[0.95rem] font-semibold text-[#182247] transition hover:bg-[#dced63]"
                 >
                   Iniciar terapia
                 </a>
@@ -218,21 +218,21 @@ export default function Home() {
             </nav>
           </header>
 
-          <div className="mx-auto mt-12 max-w-4xl text-center lg:mt-14">
-            <p className="text-base text-white/70 sm:text-lg">Servicios Karen Quezada</p>
-            <h1 className="mt-3 font-sans text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-[4.6rem]">
+          <div className="mx-auto mt-8 max-w-[47rem] text-center lg:mt-9">
+            <p className="text-base text-white/70 sm:text-[1.05rem]">Servicios Karen Quezada</p>
+            <h1 className="mt-3 font-sans text-[2.85rem] font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-[3.55rem] lg:text-[3.75rem]">
               Todas las formas de acompañarte en tu bienestar emocional
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-[1.35rem]">
+            <p className="mx-auto mt-4 max-w-[42rem] text-[1.05rem] leading-8 text-white/80 sm:text-[1.1rem]">
               Conoce mis espacios de terapia, formación y recursos para cuidar tu salud mental
               desde un enfoque cercano, profesional y humano.
             </p>
 
-            <div className="mt-8 flex justify-center">
+            <div className="mt-6 flex justify-center">
               <div className="flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:flex-row">
                 <a
                   href="#otros-servicios"
-                  className="rounded-full bg-[var(--color-lime)] px-8 py-4 text-center text-base font-semibold text-[#182247] transition hover:bg-[#dced63]"
+                  className="rounded-full bg-[var(--color-lime)] px-8 py-3.5 text-center text-base font-semibold text-[#182247] transition hover:bg-[#dced63]"
                 >
                   Explorar servicios
                 </a>
