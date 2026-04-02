@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MobileNav } from "./mobile-nav";
 import { NavDropdown } from "./nav-dropdown";
 import logoKarenQuezada from "../../imagenes/88198844_182691326484814_762856053707636736_n.jpg";
 import imagenPromocional from "../../imagenes/imagen.jpg";
@@ -71,6 +72,13 @@ const testsMenu = [
   { label: "Consultas psicologicas", href: "#terapias" },
   { label: "Psicoterapia individual", href: "#terapias" },
   { label: "Iniciar terapia por WhatsApp", href: whatsappHref },
+];
+
+const mobileMenu = [
+  { label: "Contenidos", href: "#comunidad" },
+  { label: "Tests", href: "#terapias" },
+  { label: "Otros servicios", href: "#otros-servicios" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 function SocialIcon({
@@ -157,8 +165,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.7),transparent_46%)]" />
         <div className="relative mx-auto max-w-7xl px-6 pt-6 pb-16 sm:px-8 lg:px-12 lg:pt-10 lg:pb-24">
           <header className="mx-auto flex max-w-5xl justify-center">
-            <nav className="flex w-full max-w-4xl flex-col gap-3 rounded-[2rem] bg-white p-3 shadow-[0_18px_50px_rgba(61,45,82,0.12)] sm:flex-row sm:items-center sm:justify-between sm:rounded-full">
-              <div className="flex items-center gap-3 pl-2">
+            <nav className="flex w-full max-w-4xl items-center justify-between rounded-[2rem] bg-white p-4 shadow-[0_18px_50px_rgba(61,45,82,0.12)] md:rounded-full md:px-3 md:py-3">
+              <div className="flex items-center gap-3 pl-1 md:pl-2">
                 <div className="h-12 w-12 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
                   <Image
                     src={logoKarenQuezada}
@@ -167,7 +175,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="flex flex-wrap items-center gap-2 text-sm font-semibold text-[#1b2f67]">
+              <div className="hidden flex-wrap items-center gap-2 text-sm font-semibold text-[#1b2f67] md:flex">
                 <NavDropdown items={contentMenu} label="Contenidos" />
                 <NavDropdown
                   items={testsMenu}
@@ -181,7 +189,7 @@ export default function Home() {
                   Otros servicios
                 </a>
               </div>
-              <div className="flex items-center justify-end">
+              <div className="hidden items-center justify-end md:flex">
                 <a
                   href={whatsappHref}
                   target="_blank"
@@ -191,6 +199,7 @@ export default function Home() {
                   Iniciar terapia
                 </a>
               </div>
+              <MobileNav ctaHref={whatsappHref} items={mobileMenu} />
             </nav>
           </header>
 
