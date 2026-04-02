@@ -20,18 +20,21 @@ const therapies = [
     title: "Consultas psicologicas",
     description:
       "Un primer espacio de escucha para comprender lo que estas viviendo y definir el acompanamiento que necesitas.",
+    image: terapiaPsicologicaOnline,
   },
   {
     eyebrow: "Online",
     title: "Psicoterapia individual",
     description:
       "Para trabajar ansiedad, autoestima, duelo, regulacion emocional y procesos de crecimiento personal.",
+    image: imagenPromocional,
   },
   {
     eyebrow: "Online",
     title: "Psicoterapia de pareja",
     description:
       "Para parejas que desean fortalecer su comunicacion, resolver conflictos y cuidar su vinculo.",
+    image: psicologiaKarenQuezada,
   },
 ];
 
@@ -41,18 +44,21 @@ const extraServices = [
     title: "Capacitacion",
     description:
       "Espacios formativos en salud mental, neuropsicologia y educacion para instituciones, equipos y comunidades.",
+    image: saludMentalConsejos,
   },
   {
     eyebrow: "Herramientas practicas",
     title: "Talleres y asesorias",
     description:
       "Acompanamiento psicoeducativo para grupos, familias o contextos especificos que necesitan guia profesional.",
+    image: psicologiaKarenQuezada,
   },
   {
     eyebrow: "Materiales a medida",
     title: "Desarrollo de material psicoeducativo",
     description:
       "Recursos didacticos y contenido de bienestar emocional para procesos clinicos, talleres y educacion.",
+    image: imagenPromocional,
   },
 ];
 
@@ -160,12 +166,12 @@ function SocialIcon({
 
 export default function Home() {
   return (
-    <main id="top" className="bg-[#f6f2ea] text-[var(--color-ink)]">
-      <section className="relative overflow-hidden bg-[linear-gradient(180deg,#ede8f7_0%,#f7f4ee_48%,#f7f4ee_100%)]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.7),transparent_46%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 pt-6 pb-16 sm:px-8 lg:px-12 lg:pt-10 lg:pb-24">
-          <header className="mx-auto flex max-w-5xl justify-center">
-            <nav className="flex w-full max-w-4xl items-center justify-between rounded-[2rem] bg-white p-4 shadow-[0_18px_50px_rgba(61,45,82,0.12)] md:rounded-full md:px-3 md:py-3">
+    <main id="top" className="bg-[#f2eef9] text-[var(--color-ink)]">
+      <section className="relative overflow-hidden bg-[#302149] text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.08),transparent_42%)]" />
+        <div className="relative mx-auto max-w-7xl px-5 pt-5 pb-14 sm:px-8 lg:px-12 lg:pt-8 lg:pb-20">
+          <header className="mx-auto flex max-w-6xl justify-center">
+            <nav className="flex w-full max-w-6xl items-center justify-between rounded-[2rem] bg-white/96 p-4 text-[#0f2a67] shadow-[0_18px_50px_rgba(14,12,27,0.18)] backdrop-blur md:rounded-full md:px-3 md:py-3">
               <div className="flex items-center gap-3 pl-1 md:pl-2">
                 <div className="h-12 w-12 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
                   <Image
@@ -177,11 +183,7 @@ export default function Home() {
               </div>
               <div className="hidden flex-wrap items-center gap-2 text-sm font-semibold text-[#1b2f67] md:flex">
                 <NavDropdown items={contentMenu} label="Contenidos" />
-                <NavDropdown
-                  items={testsMenu}
-                  label="Tests"
-                  minWidthClassName="min-w-72"
-                />
+                <NavDropdown items={testsMenu} label="Tests" minWidthClassName="min-w-72" />
                 <a
                   href="#otros-servicios"
                   className="rounded-full px-5 py-3 text-[#ff7d9a] transition hover:bg-[#fff1f5]"
@@ -203,40 +205,21 @@ export default function Home() {
             </nav>
           </header>
 
-          <div className="mt-12 grid items-center gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14">
-            <div className="max-w-xl">
-              <div className="mb-5 flex items-center gap-4">
-                <div className="h-16 w-16 overflow-hidden rounded-full border border-white/80 bg-white shadow-[0_8px_24px_rgba(61,45,82,0.08)]">
-                  <Image
-                    src={logoKarenQuezada}
-                    alt="Logo profesional Karen Quezada"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--color-slate)]">
-                    Karen Quezada
-                  </p>
-                  <p className="mt-1 text-sm text-[var(--color-slate)]">
-                    Psicologia clinica y neuropsicologia
-                  </p>
-                </div>
-              </div>
-              <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
-                Servicios Karen Quezada
-              </p>
-              <h1 className="mt-5 font-serif text-4xl leading-[0.95] sm:text-5xl lg:text-6xl">
-                Todas las formas de acompañarte en tu bienestar emocional
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-[var(--color-slate)]">
-                Conoce mis espacios de terapia, formacion y recursos para cuidar
-                la salud mental desde un enfoque cercano, profesional y humano.
-              </p>
+          <div className="mx-auto mt-12 max-w-4xl text-center lg:mt-16">
+            <p className="text-base text-white/70 sm:text-lg">Servicios Karen Quezada</p>
+            <h1 className="mt-3 font-sans text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+              Todas las formas de acompañarte en tu bienestar emocional
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-[1.35rem]">
+              Conoce mis espacios de terapia, formación y recursos para cuidar tu salud mental
+              desde un enfoque cercano, profesional y humano.
+            </p>
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex justify-center">
+              <div className="flex w-full max-w-sm flex-col gap-4 sm:w-auto sm:flex-row">
                 <a
                   href="#otros-servicios"
-                  className="rounded-full bg-[var(--color-soft-mauve)] px-6 py-4 text-center text-sm font-semibold text-[var(--color-ink)] transition hover:bg-[#d6caeb]"
+                  className="rounded-full bg-[var(--color-lime)] px-8 py-4 text-center text-base font-semibold text-[#182247] transition hover:bg-[#dced63]"
                 >
                   Explorar servicios
                 </a>
@@ -244,95 +227,86 @@ export default function Home() {
                   href={whatsappHref}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border border-black/10 bg-white px-6 py-4 text-center text-sm font-semibold transition hover:bg-[#f5f0ea]"
+                  className="rounded-full border border-white/18 bg-white/10 px-8 py-4 text-center text-base font-semibold text-white transition hover:bg-white/18"
                 >
                   Iniciar terapia
                 </a>
               </div>
-
-              <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-[var(--color-slate)]">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-4 py-2 transition hover:bg-[#f5f0ea]"
-                  >
-                    <SocialIcon kind={link.icon} />
-                    {link.label}
-                  </a>
-                ))}
-              </div>
             </div>
+          </div>
 
-            <div className="overflow-hidden rounded-[2rem] bg-white p-3 shadow-[0_22px_60px_rgba(61,45,82,0.12)]">
-              <Image
-                src={terapiaPsicologicaOnline}
-                alt="Tarjeta principal de Karen Quezada"
-                className="h-full w-full rounded-[1.5rem] object-cover"
-                priority
-              />
+          <div className="mx-auto mt-10 flex max-w-4xl justify-center">
+            <div className="flex flex-wrap items-center justify-center gap-3 text-sm font-semibold text-white/80">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/14 bg-white/8 px-4 py-2 transition hover:bg-white/12"
+                >
+                  <SocialIcon kind={link.icon} />
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section id="terapias" className="bg-white">
+      <section id="terapias" className="bg-[#f2eef9]">
         <div className="mx-auto max-w-7xl px-6 py-18 sm:px-8 lg:px-12 lg:py-24">
-          <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
-            Terapias
-          </p>
-          <h2 className="mt-4 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
-            Espacios de terapia para tu bienestar emocional
-          </h2>
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">Terapias</p>
+            <h2 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
+              Espacios de terapia para tus vinculos y tu bienestar
+            </h2>
+          </div>
 
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {therapies.map((therapy) => (
               <article
                 key={therapy.title}
-                className="rounded-[1.75rem] border border-black/8 bg-[#faf8f4] p-6 transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(80,63,85,0.08)]"
+                className="group relative min-h-[24rem] overflow-hidden rounded-[1.9rem] border border-white/35 bg-[#4a3d73] text-white shadow-[0_18px_45px_rgba(49,35,74,0.18)] transition hover:-translate-y-1"
               >
-                <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.24em] text-[var(--color-slate)]">
-                  <span>{therapy.eyebrow}</span>
-                  {therapy.badge ? (
-                    <span className="rounded-full bg-[var(--color-blush)] px-3 py-1 tracking-[0.16em] text-[var(--color-ink)]">
-                      {therapy.badge}
-                    </span>
-                  ) : null}
+                <Image
+                  src={therapy.image}
+                  alt={therapy.title}
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(31,21,53,0.15)_0%,rgba(31,21,53,0.52)_55%,rgba(20,14,31,0.88)_100%)]" />
+                <div className="relative flex h-full flex-col justify-between p-6">
+                  <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.24em] text-white/85">
+                    <span className="rounded-full bg-white/14 px-3 py-1">{therapy.eyebrow}</span>
+                    {therapy.badge ? (
+                      <span className="rounded-full bg-[var(--color-lime)] px-3 py-1 tracking-[0.16em] text-[#182247]">
+                        {therapy.badge}
+                      </span>
+                    ) : null}
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-3xl leading-tight text-white">{therapy.title}</h3>
+                    <p className="mt-4 max-w-xs text-base leading-7 text-white/82">
+                      {therapy.description}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="mt-5 font-serif text-3xl leading-tight">
-                  {therapy.title}
-                </h3>
-                <p className="mt-4 text-base leading-7 text-[var(--color-slate)]">
-                  {therapy.description}
-                </p>
-                <a
-                  href={whatsappHref}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex rounded-full bg-[var(--color-lime)] px-5 py-3 text-sm font-semibold text-[#182247] transition hover:bg-[#dced63]"
-                >
-                  Iniciar terapia
-                </a>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="comunidad" className="bg-[#faf8f4]">
+      <section id="comunidad" className="bg-[#f6f3ec]">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-18 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-12 lg:py-24">
           <div>
-            <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
-              Comunidad
-            </p>
+            <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">Comunidad</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">
               Un espacio para aprender, reflexionar y fortalecer tu bienestar.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--color-slate)]">
-              Talleres, asesorias y contenidos psicoeducativos pensados para
-              acompanar procesos personales, familiares e institucionales.
+              Talleres, asesorias y contenidos psicoeducativos pensados para acompañar
+              procesos personales, familiares e institucionales.
             </p>
 
             <div className="mt-8 overflow-hidden rounded-[1.9rem] bg-white p-3 shadow-[0_18px_50px_rgba(75,59,79,0.08)]">
@@ -352,9 +326,9 @@ export default function Home() {
               Talleres y asesorias con enfoque practico
             </h3>
             <p className="mt-4 text-base leading-7 text-[var(--color-slate)]">
-              Un formato ideal para abrir conversaciones sobre salud mental,
-              autocuidado, vinculos y herramientas de regulacion emocional en
-              espacios educativos, familiares o comunitarios.
+              Un formato ideal para abrir conversaciones sobre salud mental, autocuidado,
+              vinculos y herramientas de regulacion emocional en espacios educativos,
+              familiares o comunitarios.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-[1.5rem] bg-[#f4f0ea] p-3">
@@ -368,30 +342,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="otros-servicios" className="bg-white">
+      <section id="otros-servicios" className="bg-[#4a3d73] text-white">
         <div className="mx-auto max-w-7xl px-6 py-18 sm:px-8 lg:px-12 lg:py-24">
-          <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
-            Mas formas de acompanarte
-          </p>
-          <h2 className="mt-4 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
-            Otros servicios profesionales
-          </h2>
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-[0.34em] text-white/70">Mas formas de acompañarte</p>
+            <h2 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
+              Otros servicios profesionales
+            </h2>
+          </div>
 
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {extraServices.map((service) => (
               <article
                 key={service.title}
-                className="rounded-[1.75rem] border border-black/8 bg-[#faf8f4] p-6 transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(80,63,85,0.08)]"
+                className="group relative min-h-[22rem] overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/8 transition hover:-translate-y-1"
               >
-                <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-slate)]">
-                  {service.eyebrow}
-                </p>
-                <h3 className="mt-5 font-serif text-3xl leading-tight">
-                  {service.title}
-                </h3>
-                <p className="mt-4 text-base leading-7 text-[var(--color-slate)]">
-                  {service.description}
-                </p>
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition duration-500 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(51,37,80,0.18)_0%,rgba(45,34,70,0.68)_60%,rgba(24,18,38,0.92)_100%)]" />
+                <div className="relative flex h-full flex-col justify-end p-6">
+                  <p className="text-xs uppercase tracking-[0.24em] text-white/75">
+                    {service.eyebrow}
+                  </p>
+                  <h3 className="mt-5 font-serif text-3xl leading-tight text-white">{service.title}</h3>
+                  <p className="mt-4 text-base leading-7 text-white/82">{service.description}</p>
+                </div>
               </article>
             ))}
           </div>
@@ -418,9 +396,7 @@ export default function Home() {
                       <p className="text-xs uppercase tracking-[0.28em] text-[var(--color-slate)]">
                         Karen Quezada
                       </p>
-                      <p className="mt-1 text-sm text-[#273d72]">
-                        Psicologia y neuropsicologia
-                      </p>
+                      <p className="mt-1 text-sm text-[#273d72]">Psicologia y neuropsicologia</p>
                     </div>
                   </div>
                   <span className="rounded-full bg-[#f3eefc] px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#6b5e90]">
@@ -437,7 +413,6 @@ export default function Home() {
                     />
                   </div>
                 </div>
-
               </div>
             </div>
 
@@ -447,12 +422,12 @@ export default function Home() {
                   ¿Buscas un proceso de cambio?
                 </p>
                 <p className="mt-4 text-[2rem] leading-tight text-[#0f2a67] sm:text-[2.05rem]">
-                  Conecta con Karen Quezada hoy y <strong>comienza terapia</strong>{" "}
-                  desde donde estes. <strong>100% en linea.</strong>
+                  Conecta con Karen Quezada hoy y <strong>comienza terapia</strong> desde
+                  donde estes. <strong>100% en linea.</strong>
                 </p>
                 <p className="mt-5 max-w-xl text-base leading-8 text-[#273d72]">
-                  Atencion online para consultas psicologicas, terapia individual
-                  y terapia de pareja.
+                  Atencion online para consultas psicologicas, terapia individual y terapia
+                  de pareja.
                 </p>
               </div>
 
@@ -472,35 +447,46 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:px-12">
-          <div>
-            <div className="mb-4 h-16 w-16 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
-              <Image
-                src={logoKarenQuezada}
-                alt="Logo Karen Quezada"
-                className="h-full w-full object-cover"
-              />
+      <footer className="bg-[#efe9f7]">
+        <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 lg:px-12">
+          <div className="grid gap-10 border-b border-[#d8d0e7] pb-10 lg:grid-cols-[1.1fr_0.8fr_0.9fr_1fr]">
+            <div>
+              <div className="mb-4 h-16 w-16 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
+                <Image
+                  src={logoKarenQuezada}
+                  alt="Logo Karen Quezada"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">Karen Quezada</p>
+              <p className="mt-4 font-serif text-3xl">Psicologia clinica y neuropsicologia</p>
+              <p className="mt-4 max-w-md text-base leading-7 text-[var(--color-slate)]">
+                Acompañamiento profesional online para procesos individuales, de pareja y espacios
+                psicoeducativos.
+              </p>
             </div>
-            <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
-              Inicio
-            </p>
-            <p className="mt-4 font-serif text-3xl">Karen Quezada Psicologa</p>
-            <p className="mt-4 max-w-md text-base leading-7 text-[var(--color-slate)]">
-              Psicologa clinica. Master en Neuropsicologia y Educacion.
-            </p>
-          </div>
 
-          <div className="grid gap-8 sm:grid-cols-2">
             <div>
               <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
                 Servicios
               </p>
-              <ul className="mt-4 space-y-3 text-base text-[var(--color-slate)]">
-                <li>Consultas psicologicas</li>
-                <li>Psicoterapia individual</li>
-                <li>Psicoterapia de pareja</li>
-                <li>Capacitacion</li>
+              <ul className="mt-5 space-y-3 text-base text-[var(--color-slate)]">
+                <li><a href="#terapias">Consultas psicologicas</a></li>
+                <li><a href="#terapias">Psicoterapia individual</a></li>
+                <li><a href="#terapias">Psicoterapia de pareja</a></li>
+                <li><a href="#otros-servicios">Capacitacion</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
+                Explorar
+              </p>
+              <ul className="mt-5 space-y-3 text-base text-[var(--color-slate)]">
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#otros-servicios">Material psicoeducativo</a></li>
+                <li><a href={instagramHref} target="_blank" rel="noreferrer">Instagram</a></li>
+                <li><a href={facebookHref} target="_blank" rel="noreferrer">Facebook</a></li>
               </ul>
             </div>
 
@@ -508,42 +494,82 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">
                 Contacto
               </p>
-              <ul className="mt-4 space-y-3 text-base text-[var(--color-slate)]">
-                <li>
-                  <a href={whatsappHref} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
+              <div className="mt-5 rounded-[1.6rem] bg-white p-5 shadow-[0_18px_35px_rgba(75,59,79,0.08)]">
+                <p className="text-lg font-semibold text-[#182247]">
+                  Agenda tu espacio de terapia
+                </p>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-slate)]">
+                  Escríbeme por WhatsApp o correo y conversemos sobre el acompañamiento que
+                  necesitas.
+                </p>
+                <div className="mt-5 flex flex-col gap-3 text-sm text-[var(--color-slate)]">
+                  <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
                     <SocialIcon kind="whatsapp" />
-                    WhatsApp: 098 400 6435
+                    098 400 6435
                   </a>
-                </li>
-                <li>
                   <a href={emailHref} className="inline-flex items-center gap-2">
                     <SocialIcon kind="email" />
                     karenquezada.psicologia@gmail.com
                   </a>
-                </li>
-                <li>
-                  <a href={instagramHref} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
-                    <SocialIcon kind="instagram" />
-                    Instagram: @karenquezadapsc
-                  </a>
-                </li>
-                <li>
-                  <a href={facebookHref} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
-                    <SocialIcon kind="facebook" />
-                    Facebook: psicologakarenquezada
-                  </a>
-                </li>
-                <li>
-                  <a href={tikTokHref} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">
-                    <SocialIcon kind="tiktok" />
-                    TikTok: @karenquezadapsc
-                  </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div className="flex flex-col gap-5 pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-wrap gap-3">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-[#d8d0e7] bg-white px-4 py-2 text-sm font-semibold text-[#273d72] transition hover:bg-[#f8f4ee]"
+                >
+                  <SocialIcon kind={link.icon} />
+                  {link.label}
+                </a>
+              ))}
+            </div>
+            <p className="text-sm text-[var(--color-slate)]">
+              © 2026 Karen Quezada. Todos los derechos reservados.
+            </p>
           </div>
         </div>
       </footer>
+
+      <div className="pointer-events-none fixed inset-x-0 bottom-4 z-40 hidden justify-center px-4 lg:flex">
+        <div className="pointer-events-auto flex w-full max-w-[26rem] items-end gap-3">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-[#ece7f7] bg-[#4264d1] shadow-[0_18px_40px_rgba(48,33,73,0.24)]">
+            <SocialIcon kind="whatsapp" className="h-7 w-7" />
+          </div>
+          <div className="flex-1 rounded-[1.7rem] bg-white p-5 shadow-[0_22px_60px_rgba(48,33,73,0.22)]">
+            <p className="text-[1.45rem] font-semibold leading-tight text-[#0f2a67]">
+              ¿Buscas un proceso de cambio?
+            </p>
+            <p className="mt-2 text-sm leading-7 text-[#273d72]">
+              Conecta con Karen Quezada hoy y <strong>comienza terapia</strong> desde donde
+              estés. <strong>100% en linea.</strong>
+            </p>
+            <div className="mt-4">
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-lime)] px-6 py-3 text-sm font-semibold text-[#182247] transition hover:bg-[#dced63]"
+              >
+                <SocialIcon kind="whatsapp" className="h-4 w-4" />
+                Iniciar terapia
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
