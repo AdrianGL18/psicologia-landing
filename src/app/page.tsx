@@ -170,7 +170,7 @@ export default function Home() {
     <main id="top" className="bg-[#f2eef9] text-[var(--color-ink)]">
       <section className="relative overflow-hidden bg-[#302149] text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.08),transparent_42%)]" />
-        <div className="relative mx-auto max-w-7xl px-5 pt-5 pb-14 sm:px-8 lg:px-12 lg:pt-8 lg:pb-20">
+        <div className="relative mx-auto max-w-7xl px-5 pt-5 pb-10 sm:px-8 lg:px-12 lg:pt-8 lg:pb-12">
           <header className="relative min-h-[6rem]">
             <a
               href="#top"
@@ -218,9 +218,9 @@ export default function Home() {
             </nav>
           </header>
 
-          <div className="mx-auto mt-16 max-w-4xl text-center lg:mt-20">
+          <div className="mx-auto mt-12 max-w-4xl text-center lg:mt-14">
             <p className="text-base text-white/70 sm:text-lg">Servicios Karen Quezada</p>
-            <h1 className="mt-3 font-sans text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-[5.1rem]">
+            <h1 className="mt-3 font-sans text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-[4.6rem]">
               Todas las formas de acompañarte en tu bienestar emocional
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-[1.35rem]">
@@ -228,7 +228,7 @@ export default function Home() {
               desde un enfoque cercano, profesional y humano.
             </p>
 
-            <div className="mt-10 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <div className="flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:flex-row">
                 <a
                   href="#otros-servicios"
