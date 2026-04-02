@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FloatingCta } from "./floating-cta";
 import { MobileNav } from "./mobile-nav";
 import { NavDropdown } from "./nav-dropdown";
 import logoKarenQuezada from "../../imagenes/88198844_182691326484814_762856053707636736_n.jpg";
@@ -170,9 +171,21 @@ export default function Home() {
       <section className="relative overflow-hidden bg-[#302149] text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.08),transparent_42%)]" />
         <div className="relative mx-auto max-w-7xl px-5 pt-5 pb-14 sm:px-8 lg:px-12 lg:pt-8 lg:pb-20">
-          <header className="mx-auto flex max-w-6xl justify-center">
-            <nav className="flex w-full max-w-6xl items-center justify-between rounded-[2rem] bg-white/96 p-4 text-[#0f2a67] shadow-[0_18px_50px_rgba(14,12,27,0.18)] backdrop-blur md:rounded-full md:px-3 md:py-3">
-              <div className="flex items-center gap-3 pl-1 md:pl-2">
+          <header className="relative min-h-[6rem]">
+            <a
+              href="#top"
+              className="absolute left-0 top-0 hidden h-18 w-18 items-center justify-center rounded-full bg-white shadow-[0_18px_50px_rgba(14,12,27,0.18)] lg:flex"
+            >
+              <div className="h-14 w-14 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
+                <Image
+                  src={logoKarenQuezada}
+                  alt="Logo de Karen Quezada"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </a>
+            <nav className="mx-auto flex w-full max-w-[39rem] items-center justify-between rounded-[2rem] bg-white/96 p-4 text-[#0f2a67] shadow-[0_18px_50px_rgba(14,12,27,0.18)] backdrop-blur md:rounded-full md:px-3 md:py-3">
+              <div className="flex items-center gap-3 pl-1 md:hidden">
                 <div className="h-12 w-12 overflow-hidden rounded-full border border-[#dce6ff] bg-white">
                   <Image
                     src={logoKarenQuezada}
@@ -205,9 +218,9 @@ export default function Home() {
             </nav>
           </header>
 
-          <div className="mx-auto mt-12 max-w-4xl text-center lg:mt-16">
+          <div className="mx-auto mt-16 max-w-4xl text-center lg:mt-20">
             <p className="text-base text-white/70 sm:text-lg">Servicios Karen Quezada</p>
-            <h1 className="mt-3 font-sans text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mt-3 font-sans text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-6xl lg:text-[5.1rem]">
               Todas las formas de acompañarte en tu bienestar emocional
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80 sm:text-[1.35rem]">
@@ -215,40 +228,15 @@ export default function Home() {
               desde un enfoque cercano, profesional y humano.
             </p>
 
-            <div className="mt-8 flex justify-center">
-              <div className="flex w-full max-w-sm flex-col gap-4 sm:w-auto sm:flex-row">
+            <div className="mt-10 flex justify-center">
+              <div className="flex w-full max-w-xs flex-col gap-4 sm:w-auto sm:flex-row">
                 <a
                   href="#otros-servicios"
                   className="rounded-full bg-[var(--color-lime)] px-8 py-4 text-center text-base font-semibold text-[#182247] transition hover:bg-[#dced63]"
                 >
                   Explorar servicios
                 </a>
-                <a
-                  href={whatsappHref}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-white/18 bg-white/10 px-8 py-4 text-center text-base font-semibold text-white transition hover:bg-white/18"
-                >
-                  Iniciar terapia
-                </a>
               </div>
-            </div>
-          </div>
-
-          <div className="mx-auto mt-10 flex max-w-4xl justify-center">
-            <div className="flex flex-wrap items-center justify-center gap-3 text-sm font-semibold text-white/80">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/14 bg-white/8 px-4 py-2 transition hover:bg-white/12"
-                >
-                  <SocialIcon kind={link.icon} />
-                  {link.label}
-                </a>
-              ))}
             </div>
           </div>
         </div>
@@ -543,33 +531,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <div className="pointer-events-none fixed inset-x-0 bottom-4 z-40 hidden justify-center px-4 lg:flex">
-        <div className="pointer-events-auto flex w-full max-w-[26rem] items-end gap-3">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full border-4 border-[#ece7f7] bg-[#4264d1] shadow-[0_18px_40px_rgba(48,33,73,0.24)]">
-            <SocialIcon kind="whatsapp" className="h-7 w-7" />
-          </div>
-          <div className="flex-1 rounded-[1.7rem] bg-white p-5 shadow-[0_22px_60px_rgba(48,33,73,0.22)]">
-            <p className="text-[1.45rem] font-semibold leading-tight text-[#0f2a67]">
-              ¿Buscas un proceso de cambio?
-            </p>
-            <p className="mt-2 text-sm leading-7 text-[#273d72]">
-              Conecta con Karen Quezada hoy y <strong>comienza terapia</strong> desde donde
-              estés. <strong>100% en linea.</strong>
-            </p>
-            <div className="mt-4">
-              <a
-                href={whatsappHref}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-lime)] px-6 py-3 text-sm font-semibold text-[#182247] transition hover:bg-[#dced63]"
-              >
-                <SocialIcon kind="whatsapp" className="h-4 w-4" />
-                Iniciar terapia
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <FloatingCta whatsappHref={whatsappHref} />
     </main>
   );
 }
