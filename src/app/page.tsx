@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import { FloatingCta } from "./floating-cta";
 import { MobileNav } from "./mobile-nav";
 import { NavDropdown } from "./nav-dropdown";
@@ -17,24 +17,24 @@ const emailHref = "mailto:karenquezada.psicologia@gmail.com";
 const therapies = [
   {
     eyebrow: "Online",
-    badge: "Mas elegido",
-    title: "Consultas psicologicas",
+    badge: "MÃ¡s elegido",
+    title: "Consultas psicolÃ³gicas",
     description:
-      "Un primer espacio de escucha para comprender lo que estas viviendo y definir el acompanamiento que necesitas.",
+      "Un primer espacio de escucha para comprender lo que estÃ¡s viviendo y definir el acompañamiento que necesitas.",
     image: terapiaPsicologicaOnline,
   },
   {
     eyebrow: "Online",
     title: "Psicoterapia individual",
     description:
-      "Para trabajar ansiedad, autoestima, duelo, regulacion emocional y procesos de crecimiento personal.",
+      "Para trabajar ansiedad, autoestima, duelo, regulaciÃ³n emocional y procesos de crecimiento personal.",
     image: imagenPromocional,
   },
   {
     eyebrow: "Online",
     title: "Psicoterapia de pareja",
     description:
-      "Para parejas que desean fortalecer su comunicacion, resolver conflictos y cuidar su vinculo.",
+      "Para parejas que desean fortalecer su comunicaciÃ³n, resolver conflictos y cuidar su vÃ­nculo.",
     image: psicologiaKarenQuezada,
   },
 ];
@@ -42,23 +42,23 @@ const therapies = [
 const extraServices = [
   {
     eyebrow: "Adaptado a ti",
-    title: "Capacitacion",
+    title: "CapacitaciÃ³n",
     description:
-      "Espacios formativos en salud mental, neuropsicologia y educacion para instituciones, equipos y comunidades.",
+      "Espacios formativos en salud mental, neuropsicologÃ­a y educaciÃ³n para instituciones, equipos y comunidades.",
     image: saludMentalConsejos,
   },
   {
     eyebrow: "Herramientas practicas",
-    title: "Talleres y asesorias",
+    title: "Talleres y asesorÃ­as",
     description:
-      "Acompanamiento psicoeducativo para grupos, familias o contextos especificos que necesitan guia profesional.",
+      "Acompañamiento psicoeducativo para grupos, familias o contextos específicos que necesitan guía profesional.",
     image: psicologiaKarenQuezada,
   },
   {
     eyebrow: "Materiales a medida",
     title: "Desarrollo de material psicoeducativo",
     description:
-      "Recursos didacticos y contenido de bienestar emocional para procesos clinicos, talleres y educacion.",
+      "Recursos didÃ¡cticos y contenido de bienestar emocional para procesos clÃ­nicos, talleres y educaciÃ³n.",
     image: imagenPromocional,
   },
 ];
@@ -76,7 +76,7 @@ const contentMenu = [
 ];
 
 const testsMenu = [
-  { label: "Consultas psicologicas", href: "#terapias" },
+  { label: "Consultas psicolÃ³gicas", href: "#terapias" },
   { label: "Psicoterapia individual", href: "#terapias" },
   { label: "Iniciar terapia por WhatsApp", href: whatsappHref },
 ];
@@ -221,10 +221,10 @@ export default function Home() {
           <div className="mx-auto mt-8 max-w-[47rem] text-center lg:mt-9">
             <p className="text-base text-white/70 sm:text-[1.05rem]">Servicios Karen Quezada</p>
             <h1 className="mt-3 font-sans text-[2.85rem] font-semibold leading-[0.98] tracking-[-0.04em] text-white sm:text-[3.55rem] lg:text-[3.75rem]">
-              Todas las formas de acompañarte en tu bienestar emocional
+              Todas las formas de acompaÃ±arte en tu bienestar emocional
             </h1>
             <p className="mx-auto mt-4 max-w-[42rem] text-[1.05rem] leading-8 text-white/80 sm:text-[1.1rem]">
-              Conoce mis espacios de terapia, formación y recursos para cuidar tu salud mental
+              Conoce mis espacios de terapia, formaciÃ³n y recursos para cuidar tu salud mental
               desde un enfoque cercano, profesional y humano.
             </p>
 
@@ -247,7 +247,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">Terapias</p>
             <h2 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
-              Espacios de terapia para tus vinculos y tu bienestar
+              Espacios de terapia para tus vÃ­nculos y tu bienestar
             </h2>
           </div>
 
@@ -293,7 +293,7 @@ export default function Home() {
               Un espacio para aprender, reflexionar y fortalecer tu bienestar.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--color-slate)]">
-              Talleres, asesorias y contenidos psicoeducativos pensados para acompañar
+              Talleres, asesorÃ­as y contenidos psicoeducativos pensados para acompaÃ±ar
               procesos personales, familiares e institucionales.
             </p>
 
@@ -311,18 +311,18 @@ export default function Home() {
               Encuentros grupales
             </p>
             <h3 className="mt-4 font-serif text-3xl leading-tight">
-              Talleres y asesorias con enfoque practico
+              Talleres y asesorÃ­as con enfoque prÃ¡ctico
             </h3>
             <p className="mt-4 text-base leading-7 text-[var(--color-slate)]">
               Un formato ideal para abrir conversaciones sobre salud mental, autocuidado,
-              vinculos y herramientas de regulacion emocional en espacios educativos,
+              vÃ­nculos y herramientas de regulaciÃ³n emocional en espacios educativos,
               familiares o comunitarios.
             </p>
 
             <div className="mt-6 overflow-hidden rounded-[1.5rem] bg-[#f4f0ea] p-3">
               <Image
                 src={saludMentalConsejos}
-                alt="Infografia de apoyo psicoeducativo"
+                alt="InfografÃ­a de apoyo psicoeducativo"
                 className="h-full w-full rounded-[1.1rem] object-cover"
               />
             </div>
@@ -333,7 +333,7 @@ export default function Home() {
       <section id="otros-servicios" className="bg-[#4a3d73] text-white">
         <div className="mx-auto max-w-7xl px-6 py-18 sm:px-8 lg:px-12 lg:py-24">
           <div className="text-center">
-            <p className="text-sm uppercase tracking-[0.34em] text-white/70">Mas formas de acompañarte</p>
+            <p className="text-sm uppercase tracking-[0.34em] text-white/70">MÃ¡s formas de acompaÃ±arte</p>
             <h2 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight sm:text-5xl">
               Otros servicios profesionales
             </h2>
@@ -384,7 +384,7 @@ export default function Home() {
                       <p className="text-xs uppercase tracking-[0.28em] text-[var(--color-slate)]">
                         Karen Quezada
                       </p>
-                      <p className="mt-1 text-sm text-[#273d72]">Psicologia y neuropsicologia</p>
+                      <p className="mt-1 text-sm text-[#273d72]">PsicologÃ­a y neuropsicologÃ­a</p>
                     </div>
                   </div>
                   <span className="rounded-full bg-[#f3eefc] px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#6b5e90]">
@@ -411,10 +411,10 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-[2rem] leading-tight text-[#0f2a67] sm:text-[2.05rem]">
                   Conecta con Karen Quezada hoy y <strong>comienza terapia</strong> desde
-                  donde estes. <strong>100% en linea.</strong>
+                  donde estés. <strong>100% en línea.</strong>
                 </p>
                 <p className="mt-5 max-w-xl text-base leading-8 text-[#273d72]">
-                  Atencion online para consultas psicologicas, terapia individual y terapia
+                  Atención online para consultas psicológicas, terapia individual y terapia
                   de pareja.
                 </p>
               </div>
@@ -447,7 +447,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-sm uppercase tracking-[0.34em] text-[var(--color-slate)]">Karen Quezada</p>
-              <p className="mt-4 font-serif text-3xl">Psicologia clinica y neuropsicologia</p>
+              <p className="mt-4 font-serif text-3xl">Psicología clínica y neuropsicología</p>
               <p className="mt-4 max-w-md text-base leading-7 text-[var(--color-slate)]">
                 Acompañamiento profesional online para procesos individuales, de pareja y espacios
                 psicoeducativos.
@@ -459,10 +459,10 @@ export default function Home() {
                 Servicios
               </p>
               <ul className="mt-5 space-y-3 text-base text-[var(--color-slate)]">
-                <li><a href="#terapias">Consultas psicologicas</a></li>
+                <li><a href="#terapias">Consultas psicológicas</a></li>
                 <li><a href="#terapias">Psicoterapia individual</a></li>
                 <li><a href="#terapias">Psicoterapia de pareja</a></li>
-                <li><a href="#otros-servicios">Capacitacion</a></li>
+                <li><a href="#otros-servicios">Capacitación</a></li>
               </ul>
             </div>
 
@@ -525,7 +525,7 @@ export default function Home() {
               ))}
             </div>
             <p className="text-sm text-[var(--color-slate)]">
-              © 2026 Karen Quezada. Todos los derechos reservados.
+              Â© 2026 Karen Quezada. Todos los derechos reservados.
             </p>
           </div>
         </div>
@@ -535,3 +535,5 @@ export default function Home() {
     </main>
   );
 }
+
+
