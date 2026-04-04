@@ -38,7 +38,7 @@ export function FloatingCta({ whatsappHref }: { whatsappHref: string }) {
           </p>
           <p className="mt-2 text-sm leading-7 text-[#273d72]">
             Conecta con Karen Quezada hoy y <strong>comienza terapia</strong> desde donde
-            estÃ©s. <strong>100% en línea.</strong>
+            estés. <strong>100% en línea.</strong>
           </p>
           <div className="mt-4 flex items-center gap-5">
             <a
@@ -63,5 +63,6 @@ export function FloatingCta({ whatsappHref }: { whatsappHref: string }) {
     </div>
   );
 }
+
 
 
