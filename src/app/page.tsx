@@ -525,7 +525,11 @@ export default function Home() {
               ))}
             </div>
             <p className="text-sm text-[var(--color-slate)]">
-              © 2026 Soluciones Informáticas Todos los derechos reservados.
+              © 2026{" "}
+              <span className="cursor-default underline decoration-[#8c7ca8] underline-offset-4">
+                Soluciones Informáticas
+              </span>{" "}
+              Todos los derechos reservados.
             </p>
           </div>
         </div>
