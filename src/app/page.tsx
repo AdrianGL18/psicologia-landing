@@ -525,7 +525,7 @@ export default function Home() {
               ))}
             </div>
             <p className="text-sm text-[var(--color-slate)]">
-              © 2026 Karen Quezada. Todos los derechos reservados.
+              © 2026 Soluciones Informáticas Todos los derechos reservados.
             </p>
           </div>
         </div>
